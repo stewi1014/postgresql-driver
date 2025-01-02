@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "postgresql-driver",
+  "version": "${version}",
+  "name": "Example mod",
+  "description": "The PostgreSQL JDBC Driver",
+  "authors": [],
+  "contact": {
+    "homepage": "https://git.lenqua.link/minecraft/postgresql-driver",
+    "sources": "https://git.lenqua.link/minecraft/postgresql-driver"
+  },
+  "license": "BSD-2-Clause",
+  "icon": "postgreslogo.svg",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [],
+  "depends": {
+    "java": ">=8"
+  }
+}
