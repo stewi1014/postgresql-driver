@@ -6,4 +6,4 @@ modId="postgresql_driver"
 version="${version}"
 displayName="PostgreSQL JDBC Driver"
 description='''PostgreSQL JDBC Driver'''
-logoFile="postgreslogo.svg"
+logoFile="postgreslogo.png"

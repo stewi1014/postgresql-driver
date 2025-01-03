@@ -5,5 +5,12 @@ plugins {
 
 repositories { mavenCentral() }
 dependencies { implementation "org.postgresql:postgresql:${version}" }
-processResources.expand("version": version)
-shadowJar.dependencies { exclude(dependency("org.checkerframework:checker-qual:.*")) }
+processResources.filesMatching(["fabric.mod.json", "META-INF/neoforge.mods.toml"]) { expand("version": version) }
+build { dependsOn(shadowJar) }
+jar.enabled = false
+
+shadowJar {
+    mergeServiceFiles()
+    String shadePath = "org.postgresql.shaded"
+    relocate("org.checkerframework", "${shadePath}.org.checkerframework")
+}

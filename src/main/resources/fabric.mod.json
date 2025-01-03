@@ -10,7 +10,7 @@
     "sources": "https://git.lenqua.link/minecraft/postgresql-driver"
   },
   "license": "BSD-2-Clause",
-  "icon": "postgreslogo.svg",
+  "icon": "postgreslogo.png",
   "environment": "*",
   "entrypoints": {},
   "mixins": [],
